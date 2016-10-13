@@ -16,13 +16,13 @@
 IO类游戏是不可能直接抄袭的，因为可以抄的别人早就抄了个光光。但是可以在这个类型上面换一种玩法，比如跑酷 + IO。IO类型的游戏有一个运营特点，就是日活（每日用户活跃量）非常高，也就是辛辛苦苦导的量不怎么会浪费掉。
 
 # 以上是游戏设计的知识普及，接下来介绍这个项目：
-<img src="/uploads/default/original/2X/5/5bc223ed980222c03dbf2930784b128948dca606.png" width="690" height="411">
+<img src="http://forum.cocos.com/uploads/default/original/2X/5/5bc223ed980222c03dbf2930784b128948dca606.png" width="690" height="411">
 
 #[项目预览地址](https://wubuzi.github.io/slitherIO/)
 玩法是单击移动，双击加速移动。
 
 #[源码地址（是整个工程，可以用cocos creator直接打开）](https://github.com/WuBuzi/slitherIO)
-还是处于开发阶段，**并且已经弃置**，我试了下，发现这样的游戏对技术要求才是最最高的，因为前端本身就是一个问题，市面上火爆的IO类游戏基本都是用unity做的，我这个是用creator做的，所以我弃置了。因为在手机的网页上面玩家多起来真的跑不动。（主要原因我没怎么用心做，because<img src="/uploads/default/original/2X/6/608f433c600c19ec063f1c7d2dd479fcbef3f5e5.png" width="201" height="97">被这本书祸害比较重）
+还是处于开发阶段，**并且已经弃置**，我试了下，发现这样的游戏对技术要求才是最最高的，因为前端本身就是一个问题，市面上火爆的IO类游戏基本都是用unity做的，我这个是用creator做的，所以我弃置了。因为在手机的网页上面玩家多起来真的跑不动。（主要原因我没怎么用心做，because<img src="http://forum.cocos.com/uploads/default/original/2X/6/608f433c600c19ec063f1c7d2dd479fcbef3f5e5.png" width="201" height="97">被这本书祸害比较重）
 
 
 ###不说这些了，来研究研究技术吧。
