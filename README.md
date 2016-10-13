@@ -1,2 +1,2 @@
-# slitherIO
-贪吃蛇大战
+# hello-world
+Hello world new project template.
