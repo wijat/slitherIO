@@ -1,0 +1,1 @@
+cc.director.GlobalEvent={handles_:{},emit:function(n,h){var s=[];h.eventName=n;for(var e in this.handles_)if(e==n)for(var t=0;t<this.handles_[e].length;t++){var a=this.handles_[e][t](h);s.push(a)}return s},on:function(n,h,s){this.handles_[n]=this.handles_[n]||[],this.handles_[n].push(h.bind(s))},off:function(n){for(var h=0;h<this.handles_[n].length;h++)this.handles_[n][h]=null}};
