@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [],
+  "mappings": "AAAA,IAAI,OAAO,GAAG,OAAO,CAAC,SAAS,CAAC,CAAA;;AAGhC,EAAE,CAAC,KAAK,CAAC;AACL,eAAS,EAAE,CAAC,SAAS;;AAErB,cAAU,EAAE,EAEX;;AAGD,UAAM,EAAE,kBAAY;AAChB,YAAI,QAAQ,GAAG,OAAO,CAAC,cAAc,EAAE,CAAA;AACvC,YAAI,CAAC,IAAI,CAAC,KAAK,GAAG,IAAI,EAAE,CAAC,KAAK,CAAC,QAAQ,CAAC,CAAC,CAAC,EAAE,QAAQ,CAAC,CAAC,CAAC,EAAE,QAAQ,CAAC,CAAC,CAAC,CAAC,CAAA;KACxE;;AAED,oBAAgB,EAAE,0BAAU,KAAK,EAAE,IAAI,EAAE;AACrC,YAAI,KAAK,CAAC,GAAG,IAAI,OAAO,CAAC,SAAS,IAAI,IAAI,CAAC,GAAG,IAAI,OAAO,CAAC,OAAO,EAAE;AAC/D,cAAE,CAAC,QAAQ,CAAC,WAAW,CAAC,IAAI,CAAC,UAAU,EAAE,IAAI,CAAC,IAAI,CAAC,CAAA;SACtD;KAEJ;;CAEJ,CAAC,CAAC",
+  "file": "unknown",
+  "sourcesContent": [
+    "var Helpers = require('Helpers')\r\n\r\n\r\ncc.Class({\r\n    extends: cc.Component,\r\n\r\n    properties: {\r\n        \r\n    },\r\n\r\n    \r\n    onLoad: function () {\r\n        var colorAry = Helpers.getRandomColor()\r\n        this.node.color = new cc.Color(colorAry[0], colorAry[1], colorAry[2])\r\n    },\r\n\r\n    onCollisionEnter: function (other, self) {\r\n        if (other.tag == Helpers.MyHeadTag && self.tag == Helpers.FoodTag) {\r\n            cc.director.GlobalEvent.emit('eatAFood', self.node)\r\n        }\r\n\r\n    },\r\n\r\n});\r\n"
+  ]
+}

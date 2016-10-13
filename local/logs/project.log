@@ -1,0 +1,50 @@
+2016-10-13T02:43:50.903Z - normal: Load ~/.CocosCreator/settings.json
+2016-10-13T02:43:50.903Z - normal: checking language setting...
+2016-10-13T02:43:50.903Z - normal: Language: zh
+2016-10-13T02:43:52.024Z - success: protocol editor-framework registered
+2016-10-13T02:43:52.040Z - success: protocol app registered
+2016-10-13T02:43:52.040Z - success: protocol packages registered
+2016-10-13T02:43:52.040Z - success: protocol theme registered
+2016-10-13T02:43:52.040Z - success: protocol unpack registerred
+2016-10-13T02:43:52.274Z - normal: connected!
+2016-10-13T02:43:52.290Z - normal: Check project F:\svn\slitherIO
+2016-10-13T02:43:52.290Z - normal: Initializing Cocos Creator Editor
+2016-10-13T02:43:52.790Z - normal: Initializing Cocos2d
+2016-10-13T02:43:53.977Z - normal: Initializing Asset Database
+2016-10-13T02:43:54.024Z - success: protocol uuid registerred
+2016-10-13T02:43:54.024Z - success: protocol db registerred
+2016-10-13T02:43:54.024Z - success: protocol thumbnail registerred
+2016-10-13T02:43:54.024Z - normal: Loading editor/builtin packages
+2016-10-13T02:43:54.181Z - success: assets loaded
+2016-10-13T02:43:54.181Z - success: builder loaded
+2016-10-13T02:43:54.196Z - success: hierarchy loaded
+2016-10-13T02:43:54.196Z - success: inspector loaded
+2016-10-13T02:43:54.196Z - success: keystore loaded
+2016-10-13T02:43:54.196Z - success: node-library loaded
+2016-10-13T02:43:54.196Z - success: preferences loaded
+2016-10-13T02:43:54.212Z - success: project-importer loaded
+2016-10-13T02:43:54.227Z - success: project-settings loaded
+2016-10-13T02:43:54.227Z - success: ui-kit loaded
+2016-10-13T02:43:54.227Z - success: ui-grid loaded
+2016-10-13T02:43:54.227Z - success: scene loaded
+2016-10-13T02:43:54.227Z - success: sprite-editor loaded
+2016-10-13T02:43:54.243Z - success: timeline loaded
+2016-10-13T02:43:54.243Z - normal: Loading builtin packages
+2016-10-13T02:43:54.243Z - success: asset-db-debugger loaded
+2016-10-13T02:43:54.243Z - success: cocos-package loaded
+2016-10-13T02:43:54.243Z - success: code-editor loaded
+2016-10-13T02:43:54.243Z - success: color-picker loaded
+2016-10-13T02:43:54.259Z - success: console loaded
+2016-10-13T02:43:54.259Z - success: package-manager loaded
+2016-10-13T02:43:54.259Z - success: tester loaded
+2016-10-13T02:43:54.259Z - success: ui-kit-preview-extra loaded
+2016-10-13T02:43:54.259Z - success: ui-kit-preview loaded
+2016-10-13T02:43:54.259Z - success: ui-tree loaded
+2016-10-13T02:43:54.337Z - normal: Initializing project F:\svn\slitherIO
+2016-10-13T02:43:54.352Z - normal: Loading packages
+2016-10-13T02:43:54.368Z - normal: Run Application
+2016-10-13T02:43:55.228Z - success: preview server running at http://localhost:7456
+2016-10-13T02:44:00.621Z - normal: 1.2.2
+2016-10-13T02:45:02.990Z - normal: Compiled successfully
+2016-10-13T02:45:05.017Z - normal: 1.2.2
+2016-10-13T02:45:10.269Z - normal: Built to "F:\svn\slitherIO\build" successfully

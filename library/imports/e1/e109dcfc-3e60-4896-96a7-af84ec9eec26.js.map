@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [],
+  "mappings": ";;;AAIA,IAAI,EAAE,GAAG;AACL,QAAI,EAAE,EAAE;AACR,UAAM,EAAC,kCAAkC;;AAEzC,UAAM,EAAE,gBAAU,OAAO,EAAE,KAAK,EAAE,QAAQ,EAAE;AACxC,YAAI,CAAC,OAAO,GAAG,OAAO,CAAA;AACtB,YAAI,CAAC,KAAK,GAAG,KAAK,CAAA;AAClB,YAAI,CAAC,aAAa,GAAG,QAAQ,CAAA;;AAE7B,eAAO,GAAG,CAAC,WAAW,CAAC,IAAI,CAAC,CAAA;KAC/B;;;;;;;;;AASD,aAAS,EAAE,mBAAU,QAAQ,EAAE;AAC3B,YAAI,CAAC,aAAa,CAAC,QAAQ,CAAC,CAAA;KAC/B;;;;;;;;;;;;;;;AAeD,gBAAY,EAAE,sBAAU,IAAI,EAAE;AAC1B,YAAI,IAAI,CAAC,IAAI,IAAI,GAAG,EAAE;AAClB,cAAE,CAAC,QAAQ,CAAC,WAAW,CAAC,IAAI,CAAC,WAAW,EAAE,IAAI,CAAC,CAAA;SAClD;KACJ;;AAED,WAAO,EAAE,iBAAU,QAAQ,EAAE;AACzB,eAAO,CAAC,GAAG,CAAC,QAAQ,EAAE,QAAQ,CAAC,CAAC;KACnC;;AAED,SAAK,EAAE,eAAU,GAAG,EAAE;;AAElB,UAAE,CAAC,QAAQ,CAAC,WAAW,CAAC,IAAI,CAAC,WAAW,EAAG,GAAG,CAAC,OAAO,CAAC,CAAA;KAC1D;;CAIJ,CAAA;;AAED,MAAM,CAAC,OAAO,GAAG,EAAE,CAAA",
+  "file": "unknown",
+  "sourcesContent": [
+    "\r\n\r\n\r\n//客户端API\r\nvar _p = {\r\n    data: {},\r\n    appKey:'ef157e0cad97efcbc7e7c2b48ef9444f',//这是我申请的key，展示用\r\n\r\n    getNim: function (account, token, callback) {\r\n        this.account = account\r\n        this.token = token\r\n        this.loginCallback = callback\r\n\r\n        return NIM.getInstance(this)\r\n    },\r\n\r\n    // onconnect账号登录\r\n    // 连接建立后的回调, 会传入一个对象, 包含登录的信息, 有以下字段\r\n    // lastLoginDeviceId: 上次登录的设备的设备号\r\n    // connectionId: 本次登录的连接号\r\n    // ip: 客户端IP\r\n    // port: 客户端端口\r\n    // country: 本次登录的国家\r\n    onconnect: function (argument) {\r\n        this.loginCallback(argument)\r\n    },\r\n\r\n    // ondisconnect    function        optional\r\n    // 断开连接后的回调\r\n    // 此时说明 SDK 处于断开状态, 开发者此时应该根据错误码提示相应的错误信息, 并且跳转到登录页面\r\n    // 此回调会收到一个对象, 包含错误的信息, 有以下字段\r\n    // code: 出错时的错误码, 可能为空\r\n    // 302: 账号或者密码错误\r\n    // 'kicked': 被踢\r\n    // 当code为'kicked'的时候, 此对象会有以下字段\r\n    // reason: 被踢的原因\r\n    // samePlatformKick: 不允许同一个帐号在多个地方同时登录\r\n    // serverKick: 被服务器踢了\r\n    // otherPlatformKick: 被其它端踢了\r\n    // message: 文字描述的被踢的原因\r\n    ondisconnect: function (data) {\r\n        if (data.code == 302) {\r\n            cc.director.GlobalEvent.emit('302NIMErr', data)\r\n        }\r\n    },\r\n\r\n    onerror: function (argument) {\r\n        console.log('发生的错误：', argument);\r\n    },\r\n\r\n    onmsg: function (msg) {\r\n        // console.log('收到消息', msg.scene, msg.type, msg);\r\n        cc.director.GlobalEvent.emit('getNetMsg',  msg.content)\r\n    },\r\n\r\n    \r\n\r\n}\r\n\r\nmodule.exports = _p"
+  ]
+}
